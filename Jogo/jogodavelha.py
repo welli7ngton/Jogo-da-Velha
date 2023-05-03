@@ -1,41 +1,37 @@
-def mostra_tabuleiro(tabuleiro):
- # A função aceita um parâmetro contendo o status atual do tabuleiro
- # e o imprime no console.
+from random import randrange
 
-    return 0
+tabuleiro = [[0 for x in range(3)]for x in range(3)]
 
-def movimentos(tabuleiro):
- # A função aceita o status atual do tabuleiro, pergunta ao usuário sobre sua jogada, 
- # verifica a entrada e atualiza o quadro de acordo com a decisão do usuário.
+tabuleiro[1][1] = "X"
 
-    return 0
+def interfacetabuleiro(tabuleiro):
 
-def campos_vazios(tabuleiro):
- # A função navega pelo tabuleiro e constrói uma lista de todas as casas livres; 
- # a lista consiste em tuplas, enquanto cada tupla é um par de números de linha e coluna.
+    num = ["1", "2", "3", "4", "5", "6", "7", "8", "9","O", "X"]   
+    linha3 = ("|"+(" "*3)+num[0]+(" "*3)+"|"+(" "*3)+num[1]+(" "*3)+"|"+(" "*3)+num[2]+(" "*3)+"|")
 
-    return 0
+    print("+"+("-------+"*3))
 
-def vitoria_para(tabuleiro, tipo):
- # A função analisa o estado da placa a fim de verificar se 
- # o jogador usando 'O's ou 'X's ganhou o jogo.
+    for a in range(0,3):
 
-    return 0
-
-def movimento_pc(tabuleiro):
- # A função desenha o movimento do computador e atualiza o tabuleiro.
-
-    return 0
+        print("|"+(" "*7)+"|"+(" "*7)+"|"+(" "*7)+"|")
+        if a == 0:
+            print("|"+(" "*3)+num[0]+(" "*3)+"|"+(" "*3)+num[1]+(" "*3)+"|"+(" "*3)+num[2]+(" "*3)+"|") 
+        elif a == 1:
+            print("|"+(" "*3)+num[3]+(" "*3)+"|"+(" "*3)+num[10]+(" "*3)+"|"+(" "*3)+num[5]+(" "*3)+"|")
+        elif a == 2:
+            print("|"+(" "*3)+num[6]+(" "*3)+"|"+(" "*3)+num[7]+(" "*3)+"|"+(" "*3)+num[8]+(" "*3)+"|")        
+        
+        print("|"+(" "*7)+"|"+(" "*7)+"|"+(" "*7)+"|")
+        print("+"+("-------+"*3))
 
 
-tab = [[0 for x in range(3)]for x in range(3)]
 
-interface = [[0 for x in range(25)]for x in range(13)]
 
-'''for a in range(0,13):
-    for b in range(0,25):
-        interface[a][b] = '-'  testes
 
-for a in range(0,13):
-    print(interface[a])'''
 
+
+
+
+
+
+interfacetabuleiro(tabuleiro)

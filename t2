@@ -1,0 +1,12 @@
+def mostra_tabuleiro(board):
+    print("+-------"*3 + "+")
+    for l in range(3):
+        print("|       " * 3 + "|")
+        print("|   " + str(board[0][l]) + "   |")
+
+
+tabuleiro = [[0 for x in range(3)]for x in range(3)]
+
+tabuleiro[1][1] = "X"
+
+mostra_tabuleiro(tabuleiro)
