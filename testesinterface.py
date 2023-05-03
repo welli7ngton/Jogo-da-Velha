@@ -1,3 +1,6 @@
+# TRECHO DE CÓDIGO USADO PARA TESTES
+# NÃO FORAM USADOS NO CÓDIGO PRINCIPAL, MAS ME AJUDARAM A RESOLVER UMA PARTE DO PROBLEMA
+
 '''interface = [[0 for x in range(25)]for x in range(13)]
 
 interface[0][0] = "+"

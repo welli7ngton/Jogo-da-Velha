@@ -1,3 +1,4 @@
+# DEFININDO FUNÇÃO PARA MOSTRAR E ATUALIZAR O TABULEIRO NO TERMINAL
 
 def interfacetabuleiro():
 
