@@ -1,4 +1,7 @@
 import random
+
+import time
+
 # Criando a matriz para o tabuleiro
 tabuleiro = [[0 for x in range(3)] for x in range(3)]
 
@@ -186,11 +189,15 @@ for i in range(0,8):
         while True:
             okounao = None
 
-            num = random.randrange(1,9)
+            num = random.randrange(1,10)
 
+
+            
             move = str(num)
             okounao = verifica_movimento(move)
             if okounao == True:
+                print("Aguradando jogada do jogador 'X'...")
+                time.sleep(2)               
                 interfacetabuleiro(movimentação(tabuleiro, move,tX)) 
                 break
 
@@ -199,6 +206,6 @@ for i in range(0,8):
         if resultado == True:
             print("voce perdeu")
             break    
-        elif len(numeros) == 9:
+        elif len(numeros) == 9 and tabuleiro[:][:]!= "0":
             print("empate.")
-            break         
+            break 
