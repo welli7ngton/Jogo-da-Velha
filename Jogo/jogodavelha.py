@@ -46,7 +46,7 @@ def verifica_movimento(movimento):
         return True
 
 # Função para alterar a matriz do jogo e as linhas alteraveis da interface
-def movimentação(tabuleiro, movimento, tip):
+def movimentacao(tabuleiro, movimento, tip):
     # Altera a matriz de acordo com o numero digitado pelo jogador ou pelo pc
     global l1,l2,l3
     # l para linha e c para coluna
@@ -167,7 +167,7 @@ for i in range(0,8):
             okounao = verifica_movimento(move)
 
             if okounao == True:
-                interfacetabuleiro(movimentação(tabuleiro, move,tO))
+                interfacetabuleiro(movimentacao(tabuleiro, move,tO))
                 
                 break
             else:
@@ -198,7 +198,7 @@ for i in range(0,8):
             if okounao == True:
                 print("Aguradando jogada do jogador 'X'...")
                 time.sleep(2)               
-                interfacetabuleiro(movimentação(tabuleiro, move,tX)) 
+                interfacetabuleiro(movimentacao(tabuleiro, move,tX)) 
                 break
 
         #verificação de resultado    
